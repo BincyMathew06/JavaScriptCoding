@@ -1,0 +1,41 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <input id="val1">
+        <input id="val2">
+        <br>
+        <button id="addbtn">Add</button>
+        <button id="addsub">Sub</button>
+        <button id="addbmul">Mul</button>
+        <p id="result"></p>
+            
+    </body>
+    <script>
+        document.getElementById("addbtn").onclick=add;
+        document.getElementById("addsub").onclick=sub;
+        document.getElementById("addbmul").onclick=mul;
+     function add(){
+       let x= document.getElementById("val1").value;
+       let y= document.getElementById("val2").value;
+       let z=parseInt(x)+parseInt(y);
+       document.getElementById("result").innerHTML=z;
+     }
+
+     function sub(){
+       let x= document.getElementById("val1").value;
+       let y= document.getElementById("val2").value;
+       let z=parseInt(x)-parseInt(y);
+       document.getElementById("result").innerHTML=z;
+     }
+
+     function mul(){
+       let x= document.getElementById("val1").value;
+       let y= document.getElementById("val2").value;
+       let z=parseInt(x)*parseInt(y);
+       document.getElementById("result").innerHTML=z;
+     }
+    </script>
+  
+</html>
